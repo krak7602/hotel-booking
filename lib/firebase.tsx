@@ -5,13 +5,13 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDFFubtiKbzevmaiB_Iqs-ypprURrKabVA",
-  authDomain: "event-hosting-platform-demo.firebaseapp.com",
-  projectId: "event-hosting-platform-demo",
-  storageBucket: "event-hosting-platform-demo.appspot.com",
-  messagingSenderId: "786959663437",
-  appId: "1:786959663437:web:ca77a4f0362504bcd73704",
-  measurementId: "G-VWJ8ZYNHQ5"
+  apiKey: process.env.APIKEY,
+  authDomain: process.env.authDomain,
+  projectId: process.env.projectId,
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.appId,
+  measurementId: process.env.measurementId,
 };
 
 export const app = initializeApp(firebaseConfig);
